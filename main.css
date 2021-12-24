@@ -1,0 +1,136 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+	/* background-color: rgb(212, 117, 130); */
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+#header{
+  width: 100%;
+    height:7.5em ;
+    background-color:#fde391;
+
+}
+.header__item{
+	display: flex;
+	justify-content: space-between;
+	padding: 1.3em 9em;
+	height: 5em;
+	align-items:center;
+}
+
+.header__item img{
+	font-size: 3.5em;
+	width: 4em;
+	height: 2em;
+}
+
+nav a{
+	text-decoration: none;
+	padding:0.5em;
+	color: #000;
+	font-size: 1.3em;
+}
+nav a:hover{
+	color: #FF8C00;
+	
+}
+.header__icon{
+	display: flex;
+}
+.header__icon a{
+	padding: 0 0.3em;
+	font-size: 1.5em;
+	color:black;
+}
+.header__icon-item {
+	width: 2.3em;
+	height: 2.3em;
+	background-color: #ece9e9;
+	margin: 0em 0.3em;
+	border-radius: 0.3em;
+}
+	.header__icon-item  i{
+	padding: 0.2em 0em;
+	}
+.header__icon a:hover{
+	background-color: #FF8C00;
+	width: 1em;
+	height: 1em;
+	border: 2px solid #FF8C00; 
+	border-radius: 0.3em;
+	transition: ease-in 0.2s;
+	padding: 0.2em;
+}
+/* form search */
+.header__search{
+	position: fixed;
+	top:8em;
+	right: 0;	
+	display: block;
+	transform: translateX(100%);
+	transition: ease 0.4s;
+
+}
+.input__item:checked ~ .header__search{
+transform: translateX(-4%);
+}
+.input__item{
+	display: none;
+}
+.header__search-item{
+	width: 28em;
+	height: 2.9em;
+	border: 0.2em solid #fff;
+	border-radius: 0.5em;
+	outline: white;
+	padding-left: 1em;
+}
+.header__search-item ~ a{
+	position: absolute;
+	top: 0.4em;
+	right: 1em;
+	color:#000;
+	font-size: 1.5em;
+}
+.header__img img{
+	width: 100%;
+}
