@@ -55,7 +55,7 @@ html{
 .header__item{
 	display: flex;
 	justify-content: space-between;
-	padding: 3.5rem 9rem;
+	padding: 3rem 9rem;
 	height: 6rem;
 	align-items:center;
 }
@@ -99,7 +99,7 @@ nav a:hover{
 /* form search */
 .header__search{
 	position: fixed;
-	top:8rem;
+	top:12rem;
 	right: 0;	
 	display: block;
 	transform: translateX(100%);
@@ -132,12 +132,10 @@ transform: translateX(-4%);
 }
 .icon__list{
 	display: flex;
-	/* margin: 0 2rem; */
 	justify-content: space-between;
-	padding: 0.5rem 4.6rem;
+	margin: 3.5rem 4.6rem;
 }
 .icon{
-	/* margin: auto; */
 	padding: 1rem 1.2rem;
 }
 .icon i{
@@ -153,43 +151,24 @@ transform: translateX(-4%);
 /* 
 phan anh */
 .image{
-	display: flex;
-	margin:  0 5rem;
-	/* border: 0.2rem solid red; */
-	justify-content: space-between;
+display: flex;
+justify-content: space-around;
+margin: 3rem 4rem;
+
 }
 .item{
-	text-align: center;
+	overflow: hidden;
 	position: relative;
-	transition: .2s linear;
-
+	transition: 0.4s ease-in-out;
 }
 .item img{
-	border-radius: 0.3rem;
-	width:35rem;
+	width: 40rem;
 	height: 20rem;
-	
+	border-radius: 0.4rem;
+	transition: 0.4s ease-in-out;
+	display: block;
 }
 
-.item__list{
-	width: 27rem;
-	height: 9rem;
-	top:50%;
-	left: 50%;
-	transform: translate(-50%,-50%);
-	padding: 2rem;
-	background-color: rgba(90, 226, 102, 0.548);
-	position: absolute;
-	border-radius: 0.3rem;
-	cursor: pointer;
-}
-.item__list h1{
-	font-size: 1rem;
-	color: #fff;
-	line-height: 1.3;
-}
-
-.item:hover{
-	box-shadow: 0rem 0.5rem 1rem rgba(0, 0, 0, 0.1);
+.item:hover.item img{
 	transform: scale(1.1);
 }
