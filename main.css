@@ -1,47 +1,14 @@
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
+
+
+body {
+	font-family: 'Lexend', sans-serif;
+	box-sizing: border-box;
+	list-style: none;
 	margin: 0;
 	padding: 0;
 	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
 }
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
-}
-body {
-	line-height: 1;
-	font-family: 'Lexend', sans-serif;
-}
-ol, ul {
-	list-style: none;
-}
-blockquote, q {
-	quotes: none;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
-}
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
-}
+
 html{
 	font-size: 62.5%;
 }
@@ -93,13 +60,13 @@ nav a:hover{
 	border-radius: 0.4rem;
 	transition: ease-in 0.2s;
 }
-
+/
 
 .sideshow__img img{
 	width: 100%;
 	animation: fald .6s ease-in-out;
 }
-.sideshows__img{
+.sideshow{
 	position: relative;
 }
 .btn__img{
@@ -137,7 +104,7 @@ border-radius: 0.2rem;
 .icon__list{
 	display: flex;
 	justify-content: space-between;
-	margin: 3.5rem 4.6rem;
+	margin: 1.5rem 4.6rem;
 }
 .icon{
 	padding: 1rem 1.2rem;
@@ -149,20 +116,19 @@ border-radius: 0.2rem;
 }
 .icon a{
 	text-decoration: none;
-	font-size: 1.9rem;
+	font-size: 1.6rem;
 	color: #000;
 }
 
 .image{
 display: flex;
 justify-content: space-around;
-margin: 3rem 4rem;
+margin: 1rem 4rem;
 }
 .item{
 	overflow: hidden;
 	position: relative;
 	transition: 0.3s ease-in-out;
-	display: block;
 }
 .item img{
 	width: 40rem;
@@ -176,24 +142,32 @@ margin: 3rem 4rem;
 		transform: scale(1.1);
 	}
 .btn p{
-top:67%;
-left: 10%;
+top:35%;
+left: 5%;
 position: absolute;
 font-size: 1.5rem;
 color: #fff;
 border: 0.3rem solid #fff;
-padding: 1rem 2rem;
+padding: 0.5rem 1rem;
 cursor: pointer;
 transition: .3s linear;
 }
 .btn span{
 	position:absolute;
-	top:45%;
-	left: 10%;
+	top:15%;
+	left: 5%;
 	color: #fff;
 	font-size: 2rem;
+	
 }
 .btn p:hover{
 	background-color:#fff ;
 	color: #2ad10a;
+}
+.btn{
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	background-color: rgba(0, 0, 0, 0.5);
+	padding: 4.5rem 0rem;
 }

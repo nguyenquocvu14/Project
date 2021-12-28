@@ -1,7 +1,6 @@
 let t = 0;
 let slideshow = document.getElementsByClassName("sideshow__img")[0]
 let images = slideshow.children
-console.log(images)
 for (let i = 0 ; i < images.length ; ++i){
     images[i].style.display = "none";
 }
@@ -24,7 +23,7 @@ function backimg()
 {
     hideimg(t)
     t--;
-    if(t<0)
+    if(t < 0)
     t = 2;
     showimg(t)
 }
