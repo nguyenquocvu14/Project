@@ -1,17 +1,17 @@
 
-
+html{
+	font-size: 62.5%;
+}
 body {
 	font-family: 'Lexend', sans-serif;
 	box-sizing: border-box;
 	list-style: none;
+	text-decoration: none;
 	margin: 0;
 	padding: 0;
 	border: 0;
 }
-
-html{
-	font-size: 62.5%;
-}
+/* PHẦN HEADER  */
 .header{
   width: 100%;
     height:12rem ;
@@ -60,9 +60,12 @@ nav a:hover{
 	border-radius: 0.4rem;
 	transition: ease-in 0.2s;
 }
-/* form search */
+/* form search LÀM SAU */
+/* KẾT THÚC PHẦN HEADER */
 
 
+
+/* PHẦN SIDESHOW */
 .sideshow__img img{
 	width: 100%;
 	animation: fald .6s ease-in-out;
@@ -83,7 +86,6 @@ nav a:hover{
 padding: 0.8rem;
 transition: .2s linear;
 border-radius: 0.2rem;
-
 }
 .btn__icon:hover{
 	background-color:#000 ;
@@ -101,7 +103,10 @@ border-radius: 0.2rem;
 		opacity: 1;
 	}
 }
+/* KẾT THÚC PHẦN SIDESHOW */
 
+
+/* PHẦN THÂN */
 .icon__list{
 	display: flex;
 	justify-content: space-between;
