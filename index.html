@@ -7,10 +7,12 @@
     <title>Vegetable</title>
     <link rel="stylesheet" href="main.css">
     <link rel="stylesheet" href="./fontawesome-free-5.15.4-web/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lexend&display=swap" rel="stylesheet">
 </head>
 <body>
+    <!-- PHẦN HEADER WEB -->
      <header>
-    <section id="header">
+    <section class="header">
         <div class="header__item">
             <img src="./image/logo.jpg" alt="">
             <nav>
@@ -21,33 +23,47 @@
                 <a href="">Riview</a>
                 <a href="">Blogs</a>
             </nav>
+            <!-- PHẦN CÁC ICON HEADER -->
             <div class="header__icon">
                         <div class="header__icon-item">
-                            <a href=""><label for="input__list"><i class="fas fa-search"></i></label></a>
+                            <a href=""><i class="fas fa-search"></i></a>
                         </div>
-                 <div class="header__icon-item">
-                    <a href=""><i class="fas fa-shopping-cart"></i></a>
-                 </div>
-                    <div class="header__icon-item">
-                        <a href=""><i class="fas fa-user"></i></a>  
-                    </div>
-                    
+                        <div class="header__icon-item">
+                            <a href=""><i class="fas fa-shopping-cart"></i></a>
+                        </div>
+                        <div class="header__icon-item">
+                            <a href=""><i class="fas fa-user"></i></a>  
+                        </div>
                 </div>
                 </div>
-                <!-- phan search -->
-                <input type="checkbox" name="" class="input__item" id="input__list">
+                   <!-- PHẦN SEARCH WEB -->
+                <!-- <input type="checkbox" name="" class="input__item" id="input__list">
                 <div class="header__search"> 
                     <input type="text" class="header__search-item " placeholder="Search here...">
                     <a href=""><i class="fas fa-search"></i></a>
-                </div>  
+                </div>   -->
     </section>
-           <section class="header__img">
-                    <img src="./image/1.jpg" alt="">
-                    <img src="./image/2.jpg" alt="">
-                    <img src="./image/3.jpg" alt="">
-           </section>
+
+   
+        <div class="sideshow__img">
+            <img src="./image/1.jpg" alt="">
+            <img src="./image/2.jpg" alt="">
+            <img src="./image/3.jpg" alt="">
+        </div>
+   
+            <!-- PHẦN NÚT HÌNH ẢNH -->
+        <div class="btn__img">
+            <div class="btn__icon"onclick = backimg()>
+                <i class="fas fa-chevron-left"></i>
+            </div>
+            <div class="btn__icon"onclick = nextimg()>
+                <i class="fas fa-chevron-right"></i>
+            </div>
+        </div>
+
     </header> 
-    
+    <!-- KẾT THÚC PHẦN HEADER WEB -->
+    <!-- PHẦN THÂN WEB -->
     <section class="content">
         <div class="icon__list">
             <div class="icon">
@@ -76,21 +92,30 @@
         <div class="image">
             <div class="item">
                 <img src="./image/1.png" alt="">
-               
+               <div class="btn">
+                <span>RAU ĂN QUẢ</span>
+                   <p>Xem Ngay</p>
+               </div>
             </div>
+
             <div class="item">
                 <img src="./image/2.png" alt="">
-        
+                <div class="btn">
+                    <span>RAU GIA VỊ</span>
+                       <p>Xem Ngay</p>
+                   </div>
             </div>
+
             <div class="item">
                 <img src="./image/3.png" alt="">
-             
-
+                <div class="btn">
+                    <span>RAU ĂN CỦ</span>
+                       <p>Xem Ngay</p>
+                   </div>
                 </div>
             </div>
 
 
-        </div>
     </section>
 </body>
 <script src="./main.js"></script>
