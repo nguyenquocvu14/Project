@@ -18,6 +18,7 @@ function nextimg(){
     if(t >= images.length)
     t=0;
     showimg(t);
+    
 }
 function backimg()
 {
