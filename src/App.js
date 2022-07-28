@@ -5,6 +5,7 @@ import { useState, useEffect } from "react";
 import Home from "./Todos/Todo";
 import Covid from "./views/Covid";
 import { CountDown, NewCountDown } from "./views/CountDown";
+import Blog from "./views/Blog";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 
 function App() {
@@ -54,9 +55,7 @@ function App() {
     <Router>
       <div className="App">
         <Nav />
-        <header className="App-header">
-          <h1>Hello world with React.js {name}</h1>
-        </header>
+        <header className="App-header">{/* <h1>Hello world with React.js {name}</h1> */}</header>
 
         <Switch>
           <Route exact path="/">
@@ -84,6 +83,9 @@ function App() {
           <Route path="/timer">
             <CountDown onTimeup={onTimeup} />
             <NewCountDown onTimeup={onTimeup} />
+          </Route>
+          <Route path="/Blog">
+            <Blog />
           </Route>
         </Switch>
       </div>
