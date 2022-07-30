@@ -6,7 +6,10 @@ import Home from "./Todos/Todo";
 import Covid from "./views/Covid";
 import { CountDown, NewCountDown } from "./views/CountDown";
 import Blog from "./views/Blog";
+import DetialBlog from "./views/DetailtBlog";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import AddNewBlog from "./views/AddNewBlog";
+import NotFound from "./views/NotFound";
 
 function App() {
   //
@@ -84,8 +87,19 @@ function App() {
             <CountDown onTimeup={onTimeup} />
             <NewCountDown onTimeup={onTimeup} />
           </Route>
-          <Route path="/Blog">
+          <Route path="/Blog" exact>
             <Blog />
+          </Route>
+          <Route path="/blogs/:id">
+            <DetialBlog />
+          </Route>
+
+          <Route path="/add-new-blogs">
+            <AddNewBlog />
+          </Route>
+
+          <Route path="*">
+            <NotFound />
           </Route>
         </Switch>
       </div>

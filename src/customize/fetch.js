@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import axios from "axios";
 import moment from "moment";
-const useFetch = (url) => {
+const useFetch = (url, isData) => {
   let [data, setData] = useState([]);
   //thi vu loading
   //neu data rong
@@ -20,7 +20,7 @@ const useFetch = (url) => {
         });
         let data = res && res.data ? res.data : [];
         //format Date
-        if (data && data.length > 0) {
+        if (data && data.length > 0 && isData == true) {
           data.map((item) => {
             item.Date = moment(item.Data).format("DD/MM/YYYY");
             return item;
@@ -40,7 +40,7 @@ const useFetch = (url) => {
     }
     setTimeout(() => {
       fetchData();
-    }, 2000);
+    }, 900);
 
     return () => {
       ourRequest.cancel("Operation canceled by the user."); // <-- 3rd step

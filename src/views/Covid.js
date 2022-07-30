@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import useFetch from "../customize/fetch";
 const Covid = () => {
-  const { data: covid, loading, iserror } = useFetch("https://api.covid19api.com/country/vietnam?from=2021-9-01T00%3A00%3A00Z&to=2021-9-20T00%3A00%3A00Z");
+  const { data: covid, loading, iserror } = useFetch("https://api.covid19api.com/country/vietnam?from=2021-9-01T00%3A00%3A00Z&to=2021-9-20T00%3A00%3A00Z", true);
   return (
     <table id="customers">
       <thead>
