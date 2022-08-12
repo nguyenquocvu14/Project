@@ -10,7 +10,7 @@ let getHomepage = async (req, res) => {
 let getDetailpage = async (req, res) => {
   let userId = req.params.id;
   let [user] = await pool.execute("SELECT * FROM users Where id=?", [userId]);
-  // console.log("checj id", user);
+  // console.log("checj id", userId);
   return res.send(JSON.stringify(user));
 };
 module.exports = {

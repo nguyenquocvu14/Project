@@ -28,18 +28,13 @@
             </tr>
           </thead>
           <tbody>
-            <!-- <tr>
-              <td>Jill</td>
-              <td>Smith</td>
-              <td>50</td>
-            </tr> -->
             <% for(let i=0; i < dataUser.length; i++) { %>
             <tr>
               <td><%= dataUser[i].id %></td>
               <td><%= dataUser[i].firstname %></td>
               <td><%= dataUser[i].lastname %></td>
               <td>
-                <button type="submit">Detail</button>
+                <a href="/detail/user/<%=dataUser[i].id%>">Detail</a>
                 <button type="submit">Edit</button>
                 <button type="submit">Delete</button>
               </td>
