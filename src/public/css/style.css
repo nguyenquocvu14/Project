@@ -21,3 +21,16 @@
   background-color: #04aa6d;
   color: white;
 }
+.create-user-container {
+  display: flex;
+}
+.create-user-container label {
+  display: block;
+}
+.list-create-user {
+  margin: 0 auto;
+}
+.list-create-user .btn {
+  margin-top: 15px;
+  cursor: pointer;
+}

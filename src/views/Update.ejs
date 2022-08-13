@@ -1,0 +1,40 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="create-user-container">
+      <div class="list-create-user">
+        <% for(let i=0; i < dataUser.length; i++) { %>
+
+        <form action="/update-user" method="POST">
+          <h2><b style="text-align: center; display: block">Update user</b></h2>
+
+          <div>
+            <label>firstname</label>
+            <input type="text" value="<%= dataUser[i].firstname %>" name="firstname" />
+          </div>
+          <div>
+            <label>lastname</label>
+            <input type="text" value="<%= dataUser[i].lastname%>" name="lastname" />
+          </div>
+          <div>
+            <label>email</label>
+            <input type="email" name="email" value="<%= dataUser[i].email %>" />
+          </div>
+          <div>
+            <label>address</label>
+            <input type="text" name="address" value="<%= dataUser[i].address %>" />
+          </div>
+          <input type="text" value="<%= dataUser[i].id %>" hidden name="id" />
+          <div><button type="submit" class="btn">Update</button></div>
+        </form>
+        <% } %>
+      </div>
+    </div>
+  </body>
+</html>

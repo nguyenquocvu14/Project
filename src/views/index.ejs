@@ -17,7 +17,6 @@
     <div>
       <div class="w3-container">
         <h2>List User:</h2>
-
         <table class="w3-table-all w3-hoverable">
           <thead>
             <tr class="w3-light-grey">
@@ -35,13 +34,44 @@
               <td><%= dataUser[i].lastname %></td>
               <td>
                 <a href="/detail/user/<%=dataUser[i].id%>">Detail</a>
-                <button type="submit">Edit</button>
-                <button type="submit">Delete</button>
+
+                <form action="/edit-user/<%=dataUser[i].id%>" method="GET" style="display: inline-block">
+                  <button type="submit">Edit</button>
+                </form>
+
+                <form action="/detail-user" method="POST" style="display: inline-block">
+                  <input type="text" hidden value="<%=dataUser[i].id%>" name="userId" />
+                  <button type="submit">Delete</button>
+                </form>
               </td>
             </tr>
             <% } %>
           </tbody>
         </table>
+      </div>
+      <div class="create-user-container">
+        <div class="list-create-user">
+          <form action="/create-new-user" method="POST">
+            <h2><b style="text-align: center; display: block">create new user</b></h2>
+            <div>
+              <label>firstname</label>
+              <input type="text" name="firstname" />
+            </div>
+            <div>
+              <label>lastname</label>
+              <input type="text" name="lastname" />
+            </div>
+            <div>
+              <label>email</label>
+              <input type="email" name="email" />
+            </div>
+            <div>
+              <label>address</label>
+              <input type="text" name="address" />
+            </div>
+            <div><button type="submit" class="btn">Submit</button></div>
+          </form>
+        </div>
       </div>
     </div>
   </body>
