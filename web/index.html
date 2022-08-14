@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./main.css" />
+    <link rel="stylesheet" href="./fontawesome-free-6.1.1-web/css/all.min.css" />
+  </head>
+  <body>
+    <div class="icon">
+      <i class="fa-solid fa-user"></i>
+    </div>
+    <div class="show">
+      <div class="main">
+        <div class="close">
+          <i class="fa-solid fa-xmark"></i>
+        </div>
+
+        <div class="header">
+          <h2>ĐĂNG KÝ</h2>
+        </div>
+        <form class="form">
+          <div class="control">
+            <label for="username">username</label>
+            <input type="text" placeholder="Tên Người Dùng" id="username" />
+            <small>error message</small>
+          </div>
+
+          <div class="control">
+            <label for="email">email</label>
+            <input type="email" placeholder="Tài Khoản Người Dùng" id="email" />
+            <small>error message</small>
+          </div>
+
+          <div class="control">
+            <label for="password">password</label>
+            <!-- <i class="fa-solid fa-eye"></i> -->
+            <i class="fa-solid fa-eye-slash"></i>
+            <input type="password" placeholder="Mật Khẩu" id="password" class="check" />
+            <small>error message</small>
+          </div>
+
+          <div class="control">
+            <label for="password1">password1</label>
+            <!-- <i class="fa-solid fa-eye-slash"></i>  -->
+            <input type="password" placeholder="Xác Nhận Lại Mật Khẩu" id="password1" class="check" />
+            <small>error message</small>
+          </div>
+          <div class="control">
+            <input type="checkbox" id="mycheck" />
+            <span>Tôi Đồng Ý Với Các Điều Khoản Trên</span>
+            <!-- <small>error message</small> -->
+          </div>
+          <button>submit</button>
+        </form>
+      </div>
+    </div>
+  </body>
+  <script src="form.js"></script>
+</html>

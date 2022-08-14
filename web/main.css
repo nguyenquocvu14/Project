@@ -1,0 +1,123 @@
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+text-decoration: none;
+
+outline:none;
+}
+html{
+    font-size: 62.5%;
+}
+.icon{
+    text-align: center;
+    cursor: pointer;
+}
+ 
+.icon i{
+    font-size: 3rem;
+    padding:2rem 2rem ;
+    background-color:green;
+    border-radius: 0.3rem;
+}
+/* --------------------------------------------- */
+.show{
+    display: none;
+    position: fixed;
+    top:0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(21, 10, 10, 0.375);
+}
+.main{
+    position: relative;
+    margin:0 auto;
+    background-color: #fff;
+    width:35rem;
+    height: 50rem;
+    border-radius: 0.4rem;
+    transform: translateY(20%);
+}
+.header{
+   text-align: center;
+   padding: 1.5rem 0rem;
+}
+/* --------------------------------------------- */
+.close{
+    position: absolute;
+    top:1rem;
+    right: 1rem;
+}
+.fa-solid{
+    font-size: 3rem;
+}
+.header h2{
+    font-size: 3rem;
+}
+label{
+font-size: 2rem;
+}
+small{
+    font-size: 1.5rem;
+}
+.form{
+    padding: 0rem 3rem;
+}
+.control{
+    margin-bottom: 1rem;
+    position: relative;
+}
+small{
+    color: red;
+    visibility:hidden;
+}
+input{
+    width: 100%;
+    padding: 0.9rem;
+    position: relative;
+
+}
+.susses input{
+
+    border-color: green;
+}
+.error input{
+    border-color: red;
+}
+
+button{
+    width: 100%;
+    padding: 0.8rem;
+    background-color: blueviolet;
+    border:none;
+}
+
+#mycheck{
+    width: 8%;
+}
+span{
+    font-size: 1.5rem;
+}
+ 
+.fa-eye{
+    position: absolute;
+    top:3.2rem;
+    right :1rem;
+    z-index: 2;
+    font-size:2rem;
+    cursor: pointer;
+    color: #6a6a6a;
+   
+}
+ .control .fa-eye-slash{
+    position: absolute;
+    top:3.2rem;
+    right :1rem;
+    z-index: 2;
+    cursor: pointer;
+    font-size:2rem;
+ display: none;
+    color: #6a6a6a;
+  
+}

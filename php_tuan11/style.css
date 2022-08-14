@@ -1,0 +1,35 @@
+* {
+  margin: 0 0;
+  box-sizing: border-box;
+}
+
+.wraprap {
+  width: 80%;
+  border: 1px solid #000;
+  margin: 0 auto;
+}
+.banner {
+  background-color: #6a6a6a;
+  text-align: center;
+  height: 50px;
+}
+.footer {
+  background-color: #6a6a6a;
+  text-align: center;
+  height: 50px;
+  clear: both;
+}
+
+.menu {
+  width: 30%;
+  float: left;
+  border: 0.1px solid red;
+}
+.mainContent {
+  width: 70%;
+  float: right;
+}
+p {
+  text-align: center;
+  border: 0.1px solid red;
+}

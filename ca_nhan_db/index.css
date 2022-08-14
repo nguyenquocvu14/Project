@@ -1,0 +1,82 @@
+.row.content {
+  height: 1500px;
+}
+
+.sidenav {
+  background-color: #6ccecb;
+  height: 100%;
+  text-align: center;
+}
+
+header {
+  background-color: #218c8d;
+  color: white;
+  padding: 15px;
+}
+
+@media screen and (max-width: 767px) {
+  .sidenav {
+    height: auto;
+    padding: 15px;
+  }
+  .row.content {
+    height: auto;
+  }
+}
+.nav {
+  display: block;
+}
+a {
+  text-decoration: none;
+  font-size: 1.8rem;
+  color: #000;
+}
+.btn:hover {
+  background-color: #555;
+}
+.btn {
+  background-color: rgb(112, 106, 106);
+}
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+textarea {
+  resize: none;
+  height: 10rem;
+}
+li {
+  margin: 2rem 0rem;
+  border-radius: 0.8rem;
+}
+
+a:hover {
+  color: #dc3545;
+}
+h1 {
+  color: #fff;
+}
+
+/* css thong tin  ca nhan */
+
+/* css thong lien he */
+table,
+td,
+th {
+  border: 1px solid black;
+  text-align: center;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td {
+  text-align: center;
+}
+/* css thong tin tuc */
+
+.add {
+  text-align: right;
+}
