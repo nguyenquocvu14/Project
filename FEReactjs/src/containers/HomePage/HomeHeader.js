@@ -13,7 +13,8 @@ class HomeHeader extends Component {
   };
   render() {
     let language = this.props.language;
-    console.log("chekkk", language);
+    // console.log("chekkk", language);
+    console.log("checkinfo>>>", this.props.userInfo);
     return (
       <>
         <div className="home-header-container">
@@ -154,18 +155,16 @@ class HomeHeader extends Component {
     );
   }
 }
-
 const mapStateToProps = (state) => {
   return {
     isLoggedIn: state.user.isLoggedIn,
+    userInfo: state.user.userInfo,
     language: state.app.language,
   };
 };
-
 const mapDispatchToProps = (dispatch) => {
   return {
     changeLanguageAppRedux: (language) => dispatch(changeLanguageApp(language)),
   };
 };
-
 export default connect(mapStateToProps, mapDispatchToProps)(HomeHeader);

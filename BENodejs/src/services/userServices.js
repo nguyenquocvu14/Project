@@ -21,18 +21,19 @@ let handleUserLogin = (email, password) => {
       let isExits = await checkUserEmail(email);
       if (isExits) {
         //check email
-        attributes: ["email", "roleId", "password"];
+
         let user = await db.User.findOne({
+          attributes: ["email", "roleId", "password", "firstName", "lastName"],
           where: { email: email },
-          // raw: true,
+          raw: true,
         });
         if (user) {
           //compare password (kiem tra mk )
           let check = await bcrypt.compareSync(password, user.password); // false
-          console.log(check);
+          // console.log(check);
           if (check) {
             userData.errCode = 0;
-            userData.errmessage = "Ok";
+            userData.errMessage = "Ok";
             delete user.password;
             userData.user = user;
           } else {
@@ -190,10 +191,35 @@ let updateUserData = (data) => {
     }
   });
 };
+//show allcode
+let getAllCodeService = (typeInput) => {
+  return new Promise(async (resolve, reject) => {
+    try {
+      if (!typeInput) {
+        resolve({
+          errCode: 1,
+          errMessage: "Missing required parames",
+        });
+      } else {
+        let res = {};
+        let allcode = await db.Allcode.findAll({
+          where: { type: typeInput },
+          raw: true,
+        });
+        res.errCode = 0;
+        res.data = allcode;
+        resolve(res);
+      }
+    } catch (e) {
+      reject(e);
+    }
+  });
+};
 module.exports = {
   handleUserLogin: handleUserLogin,
   getAllUsers: getAllUsers,
   createNewUser: createNewUser,
   deleteUser: deleteUser,
   updateUserData: updateUserData,
+  getAllCodeService: getAllCodeService,
 };

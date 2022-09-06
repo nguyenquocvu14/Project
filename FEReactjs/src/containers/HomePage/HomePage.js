@@ -2,25 +2,47 @@ import React, { Component } from "react";
 import { Redirect } from "react-router-dom";
 import { connect } from "react-redux";
 import HomeHeader from "./HomeHeader";
+import Specialty from "./Section/Specialty";
+import MedicalFacility from "./Section/MedicalFacility";
+import OutstandingDoctor from "./Section/OutstandingDoctor";
+import Handbook from "./Section/Handbook";
+import About from "./Section/About";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import HomeFooter from "./Section/HomeFooter";
 
 class HomePage extends Component {
- render() {
-  return (
-   <div>
-    <HomeHeader />
-   </div>
-  );
- }
+  render() {
+    let settings = {
+      dots: false,
+      infinite: true,
+      speed: 500,
+      slidesToShow: 4,
+      slidesToScroll: 1,
+    };
+    return (
+      <div>
+        <HomeHeader />
+        <Specialty settings={settings} />
+        <MedicalFacility settings={settings} />
+        <OutstandingDoctor settings={settings} />
+        <Handbook settings={settings} />
+        <About />
+        <HomeFooter />
+        <div style={{ height: "500px" }}></div>
+      </div>
+    );
+  }
 }
 
 const mapStateToProps = (state) => {
- return {
-  isLoggedIn: state.user.isLoggedIn,
- };
+  return {
+    isLoggedIn: state.user.isLoggedIn,
+  };
 };
 
 const mapDispatchToProps = (dispatch) => {
- return {};
+  return {};
 };
 
 export default connect(mapStateToProps, mapDispatchToProps)(HomePage);

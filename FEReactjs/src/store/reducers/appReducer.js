@@ -31,7 +31,7 @@ const appReducer = (state = initialState, action) => {
           ...action.contentOfConfirmModal,
         },
       };
-
+    //chinh language
     case actionTypes.CHANGE_LANGUAGE:
       console.log("check redux>>", action);
       return {
