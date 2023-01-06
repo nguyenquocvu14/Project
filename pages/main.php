@@ -21,6 +21,8 @@
     include("main/lienhe.php");
   } elseif ($tam == 'cuahang') {
     include("main/cuahang.php");
+  } elseif ($tam == 'locsp') {
+    include("main/locsp.php");
   } elseif ($tam == 'sanpham') {
     include("main/ctsanpham.php");
   } elseif ($tam == 'thanhtoan') {

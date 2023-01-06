@@ -27,6 +27,7 @@
       <button type="submit" class="btn btn-info" name="dangnhapkhachhang">Đăng Nhập</button>
       <button style="border:none"><a href="./dangky.php">Đăng Ký</a></button>
       <button style="border:none"><a href="./thaydoimatkhau.php">Đổi Mật Khẩu</a></button>
+      <button style="border:none"><a href="../../admin/index.php">Đăng Nhập Admin</a></button>
     </div>
     <!-- /.card-footer -->
   </form>

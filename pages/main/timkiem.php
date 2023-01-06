@@ -14,6 +14,10 @@ WHERE  tbl_sanpham.id_danhmuc=tbl_danhmuc.id_danhmuc ORDER BY tbl_sanpham.id_san
 ?>
 
 <!-- product section starts  -->
+
+<?php
+
+?>
 <section class="product" id="product">
 
   <h1 class="heading">latest <span>products</span></h1>
